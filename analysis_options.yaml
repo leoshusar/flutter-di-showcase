@@ -1,0 +1,31 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.gen.dart"
+    - "**/*.config.dart"
+    - "**/*.autoconfig.dart"
+  strong-mode:
+    implicit-casts: false
+    implicit-dynamic: false
+  errors:
+    included_file_warning: ignore
+    missing_required_param: error
+    missing_return: error
+    parameter_assignments: error
+
+linter:
+  rules:
+    always_specify_types: false
+    always_use_package_imports: false
+    eol_at_end_of_file: true
+    omit_local_variable_types: true
+    prefer_double_quotes: false
+    prefer_final_fields: true
+    prefer_final_in_for_each: true
+    prefer_final_locals: true
+    prefer_relative_imports: true
+    unawaited_futures: true
+    unnecessary_final: false
+    use_super_parameters: true
